@@ -2,8 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid #000; */
-   
+    border: 1px solid #000;
+    
 }
 @font-face {
     font-family: 'Graphik' ;
@@ -27,8 +27,10 @@ a:active {
 .container {
     position: relative;
     margin: 0 auto;
-    max-width: 1330px;
+    max-width: 1338px;
+    padding: 0 4px;
 }
+
 h3 {
     font-family: 'GraphikLC';
     font-style: normal;
@@ -123,11 +125,12 @@ header {
 
 .main_accelerate {
     padding-bottom: 299px;
+    margin-top: 125px;
 }
 .accelerate {
     position: relative;
     display: flex;
-    top: 125px;
+    
    
     margin: 0px 9px 0px 23px;
 }
@@ -154,6 +157,7 @@ h1 {
 
 
 }
+
 .accelerate_deskr_text {
     font-family: 'Graphik';
     font-weight: 300;
@@ -716,6 +720,12 @@ footer {
     .studies_list_wrp {
         width: 100%;
     }
+    .case_studies {
+        margin-right: 10px;
+    }
+    .case_studies {
+        text-align: center;
+    }
     .studies_list {
         max-width: 187px;
        
@@ -725,6 +735,10 @@ footer {
     }
 }
 @media (max-width: 1024px) {
+    .container {
+       padding: 0 4px;
+       
+    }
    
     .registration_login {
         padding: 10px 14px;
@@ -739,6 +753,9 @@ footer {
     .article_specification .gif img {
         min-width: auto;
     }
+    .accelerate_specification_blok {
+        margin: 10px;
+    } 
     .accelerate_specification_blok img {
         width: 100%;
     }
@@ -755,6 +772,7 @@ footer {
         padding-right: 0;
         padding: 10px;
     }
+    
     .studies_rights {
         padding-right: 5px;
     }
@@ -858,7 +876,7 @@ footer {
     .accelerate_specification_text h3 {
         padding-bottom: 15px;
     }
-    .accelerate_specification_text p {
+    .accelerate_specification_text p, .accelerate_specification_text p a {
         font-size: 13px;
         line-height: 15px;
         padding-bottom: 15px;
@@ -867,14 +885,17 @@ footer {
         padding: 0 0px 0 0px;
     }
     .what_to_lokalise h3{
-        padding: 20px 0px 20px 0px;
+        padding: 40px 0px 20px 0px;
     }
     .what_to_lokalise_wrap {
     flex-direction: column;
 
     }
     .boost_product {
-        padding: 20px 0 20px 0;
+        padding: 40px 0 20px 0;
+    }
+    .boost_product h3 {
+        text-align: center;
     }
     .boost_product_wrap {
         flex-direction: column;
@@ -894,6 +915,9 @@ footer {
     .speach {
         padding: 20px 0 20px 0;
     }
+    .speach_text {
+        text-align: center;
+    }
     .speach_text p {
         font-size: 19px;
         line-height: 23px;
@@ -910,6 +934,7 @@ footer {
     }
     .studies_list_wrp {
         justify-content: space-around;
+        text-align: center;
     }
     .manage_softwear {
         padding: 20px 0 20px 0;
@@ -972,8 +997,27 @@ footer {
         padding-bottom: 0;
         font-size: 13px;
     }
-    .studies_bottom {
+    .boost_product {
+        margin-right: 0;
+    }
+    .case_studies h4 {
+        text-align: center;
+    }
+    
+    .studies_lokalise {
         flex-direction: column;
+        text-align: center;
+    }
+    .studies_lokalise img {
+        padding-bottom: 15px;
+    }
+    .studies_bottom {
+        padding-top: 15px;
+        flex-direction: column;
+    }
+    
+    .studies_list {
+        text-align: center;
     }
     
 
